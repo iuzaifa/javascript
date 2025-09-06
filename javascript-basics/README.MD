@@ -1,15 +1,138 @@
-Got it — no emojis, and you want the **method return type (data type)** included in the table.
-Here’s the updated **Markdown reference**:
 
----
 
-# JavaScript Arrays – Methods Cheat Sheet
 
-This file lists commonly used array methods with examples.
+# JavaScript Variables
 
----
+There are 3 types of variables in JavaScript:
 
-## Array Methods Table
+```
+1. var   => can be reassigned and redeclared, function scoped
+2. let   => can be reassigned but not redeclared, block scoped
+3. const => cannot be reassigned or redeclared, block scoped
+```
+
+## Example Usage
+
+```javascript
+var name = 'Abu Huzaifa';
+console.log(name);
+
+let email = "abuhuzaifaw7@gmail.com";
+console.log(email);
+
+const password = "password@123";
+console.log(password);
+
+// var can be reassigned and redeclared
+name = 'Huzaifa Malik';
+var name = 'Usama Malik';
+console.log(name);
+
+// let can be reassigned but not redeclared
+email = 'google@huzafia.com';
+// let email = "amazone@gmail.com"; // Error: let cannot be redeclared
+console.log(email);
+
+// const cannot be reassigned or redeclared
+// password = "google@123";  // Error: Assignment to constant variable
+// const password = "newPass"; // Error: const cannot be redeclared
+
+// Test case 1: var is hoisted (initialized with undefined)
+console.log(num); // undefined
+var num = 123;
+
+// Test case 2: let is hoisted but not initialized (Temporal Dead Zone)
+console.log(num2); //ReferenceError
+let num2 = 234;
+
+// Test case 3: const is hoisted but not initialized (Temporal Dead Zone)
+console.log(num3); // ReferenceError
+const num3 = 234;
+
+
+// Comparison Table
+/*
+| Feature          | var       | let       | const    |
+|-----------------|-----------|-----------|---------|
+| Scope            | Function  | Block     | Block   |
+| Redeclarable     | Yes       | No        | No      |
+| Reassignable     | Yes       | Yes       | No      |
+| Hoisting         | Yes       | TDZ       | TDZ     |
+*/
+
+
+```
+
+TDZ => stands for <em>**Temporal Dead Zone**<em> in JavaScript. It’s a concept related to let and const variables.
+
+
+</br>
+
+
+# JavaScript Data Types
+
+## 1. Number
+```js
+let num = 23; 
+console.log(typeof num); // number
+````
+
+## 2. String
+
+Strings can be in single or double quotes:
+
+```js
+let text = 'Huzaifa'; 
+let city = "Delhi";
+console.log(typeof text); // string
+```
+
+## 3. Boolean
+
+Represents `true` or `false`:
+
+```js
+let isLoggedIn = true; 
+console.log(typeof isLoggedIn); // boolean
+```
+
+## 4. Constant Value
+
+Constants hold fixed values:
+
+```js
+const pi = 3.14; 
+console.log(typeof pi); // number
+```
+
+## 5. Object
+
+Objects store key-value pairs:
+
+```js
+let fullName = { 
+    fname: 'Abu', 
+    lname: 'Huzaifa' 
+};
+console.log(typeof fullName); // object
+
+const person = {
+    name: 'Abu Huzaifa',
+    email: 'abuhuzaifaw7@gmail.com',
+    age: 23,
+    nationality: 'Indian'
+};
+console.log(typeof person); // object
+```
+
+</br>
+</br>
+
+
+
+
+# JavaScript Arrays (Array Methods Table)
+
 
 | Method            | Description                  | Example                                                 | Return Type                |
 | ----------------- | ---------------------------- | ------------------------------------------------------- | -------------------------- |
