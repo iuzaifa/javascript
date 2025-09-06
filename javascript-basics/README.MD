@@ -63,7 +63,7 @@ const num3 = 234;
 
 ```
 
-TDZ => stands for <em>**Temporal Dead Zone**<em> in JavaScript. It’s a concept related to let and const variables.
+TDZ => stands for **Temporal Dead Zone** in JavaScript. It’s a concept related to let and const variables.
 
 
 </br>
