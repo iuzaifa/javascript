@@ -131,7 +131,48 @@ console.log(typeof person); // object
 
 
 
-# JavaScript Arrays (Array Methods Table)
+# JavaScript Arrays
+
+## 1. Creating Arrays
+```js
+var fruit = ['mango', 'apple', 'pear'];
+console.log(typeof fruit); // object (arrays are a type of object in JS)
+````
+
+## 2. Accessing Array Elements
+
+```js
+console.log(fruit[0]); // mango
+console.log(fruit[1]); // apple
+console.log(fruit[2]); // pear
+```
+
+
+### 3.1 concat()
+
+Joins two or more arrays:
+
+```js
+let male = ['Hamza', 'Ali', 'Ahmad', 'Ubaid'];
+let female = ['Saba', 'Afreen'];
+
+let maleFemale = male.concat(female);
+console.log(maleFemale); 
+// [ 'Hamza', 'Ali', 'Ahmad', 'Ubaid', 'Saba', 'Afreen' ]
+```
+
+### 3.2 indexOf()
+
+Returns the first index of the given value:
+
+```js
+let idxOf = 'Huzaifa';
+console.log(idxOf.indexOf()); // -1 (undefined not found)
+console.log(idxOf.indexOf('a'));  // 4 (first occurrence of 'a')
+console.log(idxOf.indexOf('a', 5)); // 6 (search starts from index 5)
+```
+
+### JavaScript Arrays and Methods Table)
 
 
 | Method            | Description                  | Example                                                 | Return Type                |
