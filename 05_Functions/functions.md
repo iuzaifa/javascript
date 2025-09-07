@@ -1,4 +1,4 @@
-# JavaScript Functions – Complete Guide
+# JavaScript Functions
 
 Functions in JavaScript are blocks of reusable code that perform specific tasks. They can take inputs (parameters), perform operations, and return outputs.
 
